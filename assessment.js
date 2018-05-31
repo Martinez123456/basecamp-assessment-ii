@@ -53,7 +53,7 @@ var myNumbers = [333, 1, 4, 5, 511, 34, 88, 77, 222];
 var evensArray = [];
 
 function evensOnly(arr){
-  for (var i=0; i<arr.length; ++i){
+  for (var i=0; i<arr.length; i++){
     if (arr[i] % 2 === 0){
       evensArray.push(arr[i]);  
     }
@@ -77,7 +77,7 @@ var peopleIknow = [
 
 var trueFriends = [];
 peopleIknow.filter(function(person){
-  if (person.peopleIknow === true){
+  if (person.friend === true){
     trueFriends.push(person);
   }
 })
